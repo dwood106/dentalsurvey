@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Survey</title>
-</head>
-<body>
-    <h1 id="title" B.R. Bendush D.D.S. Survey</h1>
-        <p id="decription"> We hope you had a good experience with us today, if you did, please let us know! If you did not, we ask that you please kindly suggest what we could do to be better!</p>
-</body>
+ </head>
+  <body>
+    <h1 id="title">B.R. Bendush D.D.S. Survey</h1>
+      <p id="description"> We hope you had a good experience with us today, if you did, please let us know! If you did not, we ask that you please kindly suggest what we could do to be better!</p>
+      <form id="survey-form">
+        <fieldset>
+            <label for="name">Enter your first name and last initial:<input type="text" placeholder="Jane D." name="name" id="name" required</input> </label>
+        </fieldset>
+         <fieldset>
+          <label for="date">Date of your visit:<input type="date" name="date" id="date" required</input></label>
+        </fieldset>
+         <fieldset>
+        <label for="reason">Reason for your visit<input type="text" placeholder="cleaning, toothache, etc..."name="reason" id="reason" required</input></label>
+        </fieldset>
+        <fieldset>
+          <label for="email"> Enter your email for a $5 giftcard as a thank you for participating the survey</label><input type="email" name="email" id="email" placeholder="email@mail.com"></input>
+        </fieldset>
+        <fieldset>
+          <label for="number"> Please give your visit an overall rating from 1-10 with 10 being the best</label> <input type="number" min="1" max="10" name="number" id="number"</input>
+          </fieldset>
+          <fieldset>
+          <label for="person"> Who did you spend the most time with today?
+            <select id="person" name="person">
+              <option value="">(select one)</option>
+              <option value="1"> Jeri</option>
+              <option value="2"> Holly</option>
+              <option value="3"> Darcy</option>
+              <option value"4"> Dr Bendush</option>
+              <option value"5"> Jack</option>
+              <option value"6">I don't know their name</option>
+              </select>
+              </label>
+              </fieldset>
+          <fieldset>
+            <legend>Would you recommend our office to a friend or family member?</legend>
+        <label for="yes"><input type="radio" class="inline" name="yes" id="yes" checked> Yes </label>
+        <label for="no"><input type="radio" class="inline" name="no" id="no"> No</label>
+            </fieldset>
+            <label for="other"> Any aditional comments or concerns?<textarea id="other" name="other" rows="3" cols="30" placeholder="The office was so clean!..."></textarea> 
+<input type="submit" value="Submit">
+      </form>
+  </body>
 </html>
